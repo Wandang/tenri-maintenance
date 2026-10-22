@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wir sind bald wieder da</title>
+    <style>
+      :root {
+        --bg: #f6f7f9;
+        --surface: #ffffff;
+        --text: #1f2937;
+        --text-muted: #6b7280;
+        --accent: #e1306c;
+        --accent-hover: #c1275b;
+        --border: #e5e7eb;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 3rem 2rem;
+        max-width: 520px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+      }
+
+      .icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: #fef3c7;
+        color: #b45309;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--text);
+      }
+
+      p {
+        color: var(--text-muted);
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      p strong {
+        color: var(--text);
+      }
+
+      .instagram-box {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .instagram-box .label {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--text-muted);
+        margin-bottom: 0.75rem;
+      }
+
+      .instagram-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.85rem 1.75rem;
+        border-radius: 999px;
+        font-size: 1rem;
+        transition:
+          background 0.2s ease,
+          transform 0.1s ease;
+      }
+
+      .instagram-btn:hover {
+        background: var(--accent-hover);
+        transform: translateY(-1px);
+      }
+
+      .instagram-btn:active {
+        transform: translateY(0);
+      }
+
+      .instagram-btn svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      footer {
+        margin-top: 2rem;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          padding: 2rem 1.25rem;
+        }
+        h1 {
+          font-size: 1.35rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="icon" aria-hidden="true">⏳</div>
+
+      <h1>Wir sind gleich wieder da</h1>
+
+      <p>
+        Unsere Webseite ist aktuell leider nicht erreichbar. Wir
+        <strong
+          >warten derzeit auf eine Rückmeldung unseres Hosting-Anbieters
+          Alfahosting</strong
+        >
+        und arbeiten mit Hochdruck daran, dass alles schnellstmöglich wieder
+        läuft.
+      </p>
+
+      <p>
+        Vielen Dank für eure Geduld – wir melden uns, sobald es Neuigkeiten
+        gibt!
+      </p>
+
+      <div class="instagram-box">
+        <div class="label">Neuigkeiten &amp; Updates findest du hier</div>
+        <a
+          class="instagram-btn"
+          href="https://www.instagram.com/tenri_kulturwerkstatt"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+            />
+          </svg>
+          Auf Instagram folgen
+        </a>
+      </div>
+
+      <footer>
+        Diese Seite wird nach Behebung des Problems wieder offline genommen.
+      </footer>
+    </main>
+  </body>
+</html>
