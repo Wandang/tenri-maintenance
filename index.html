@@ -75,6 +75,66 @@
         color: var(--text);
       }
 
+      /* --- Flyer-Bereich --- */
+      .flyer-box {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .flyer-box .label {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--text-muted);
+        margin-bottom: 0.75rem;
+      }
+
+      .flyer-link {
+        display: block;
+        max-width: 320px;
+        margin: 0 auto;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        transition:
+          transform 0.15s ease,
+          box-shadow 0.15s ease;
+        position: relative;
+      }
+
+      .flyer-link:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      }
+
+      .flyer-link:active {
+        transform: translateY(-1px);
+      }
+
+      .flyer-link img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .flyer-download-hint {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      .flyer-download-hint svg {
+        width: 16px;
+        height: 16px;
+      }
+      /* --- /Flyer-Bereich --- */
+
       .instagram-box {
         margin-top: 2rem;
         padding-top: 2rem;
@@ -156,6 +216,43 @@
         gibt!
       </p>
 
+      <!-- Flyer -->
+      <div class="flyer-box">
+        <div class="label">Unser aktuelles Programm</div>
+        <a
+          class="flyer-link"
+          href="TENRI_Programmflyer_Okt_Nov_Dez_2026 final.pdf"
+          download="TENRI_Programmflyer_Okt_Nov_Dez_2026 final.pdf"
+          aria-label="Programmflyer als PDF herunterladen"
+        >
+          <img
+            src="TENRI_Programmflyer_Okt_Nov_Dez_2026_Cover.png"
+            alt="Titelbild des aktuellen Programmflyers"
+          />
+        </a>
+        <a
+          class="flyer-download-hint"
+          href="TENRI_Programmflyer_Okt_Nov_Dez_2026 final.pdf"
+          download="TENRI_Programmflyer_Okt_Nov_Dez_2026 final.pdf"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Flyer als PDF herunterladen
+        </a>
+      </div>
+
+      <!-- Instagram -->
       <div class="instagram-box">
         <div class="label">Neuigkeiten &amp; Updates findest du hier</div>
         <a
